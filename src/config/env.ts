@@ -7,4 +7,6 @@ export const config = {
   clientUrl: process.env.CLIENT_URL || 'http://localhost:3000',
   jwtSecret: process.env.JWT_SECRET || 'fallback_secret_gold_fitness',
   databaseUrl: process.env.DATABASE_URL || '',
+  supabaseUrl: process.env.SUPABASE_URL || '',
+  supabaseKey: process.env.SUPABASE_KEY || process.env.SUPABASE_ANON_KEY || '',
 };

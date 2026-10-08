@@ -8,10 +8,16 @@
     "start": "node dist/server.js",
     "dev": "tsx watch src/server.ts"
   },
-  "keywords": ["fitness", "express", "typescript", "api"],
+  "keywords": [
+    "fitness",
+    "express",
+    "typescript",
+    "api"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",

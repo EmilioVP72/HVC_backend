@@ -1,10 +1,29 @@
 export interface User {
   id: string;
-  name: string;
+  firstName: string;
+  lastName: string;
+  fullName: string;
   email: string;
   role: 'member' | 'trainer' | 'admin';
   fitnessGoal?: 'muscle_gain' | 'fat_loss' | 'endurance' | 'maintenance';
   createdAt: Date;
+}
+
+export interface AuthSession {
+  user: User;
+  token: string;
+}
+
+export interface RegisterDTO {
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+}
+
+export interface LoginDTO {
+  email: string;
+  password: string;
 }
 
 export interface Exercise {
